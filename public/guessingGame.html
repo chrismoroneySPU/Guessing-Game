@@ -17,7 +17,6 @@
         function generateNumber(){
             var start = parseInt(document.getElementById("start").value);
             var end = parseInt(document.getElementById("end").value);
-            // Logic here is wrong
             answer = Math.floor(Math.random() * (end-start)) + start;
             var result = document.getElementById("outcome");
             var output = document.getElementById("output");
@@ -55,10 +54,13 @@
 </head>
 <body>
 <div class="container">
-    <h2 style="text-align: center;">Welcome to Chris Moroney's Guessing Game!</h2>
-    <p></p>
-    <h4 style = "text-align: center;">Select a range of numbers using the Start Number and End Number,
-        then click Start Game to being playing!</h4>
+    <div class="title">
+        <h1>Welcome to Chris Moroney's Guessing Game!</h1>
+    </div>
+    <div class="caption">
+        <h4>Select a range of numbers using the Start Number and End Number,
+            then click Start Game to being playing!</h4>
+    </div>
     <div class="form-group">
         <label for="start">Start Number (inclusive) (from...)</label>
         <input type="number" name="start" id="start" class="form-control"
@@ -79,9 +81,12 @@
 </script>
 <br>
 <hr>
+
 <div class="container">
-    <h4 style="text-align: center;">Enter your guess, then click the "Submit Guess" button. To start a new game, click "Start Game!"
-        Feel free to change your range of values too!</h4>
+    <div class="caption">
+        <h4>Enter your guess, then click the "Submit Guess" button. To start a new game, click "Start Game!"
+            Feel free to change your range of values too!</h4>
+    </div>
     <div class="form-group">
         <label for="guess">Guess a number:</label>
         <input type="number" name="guess" id="guess" class="form-control"

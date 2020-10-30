@@ -1,10 +1,28 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-a {
-  color: #00B7FF;
+h2 {
+  font-weight: bold;
 }
-* {
-  background-color: lightcoral;
+.title{
+  text-align: center;
+  font-family: "Georgia", Times, serif;
+  background-color: lightblue;
+}
+.container {
+  background-color: lightpink;
+  padding: 10px;
+}
+.form-group {
+  background-color: lightyellow;
+  padding: 10px;
+}
+.caption {
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#outcome {
+  background-color: lightgreen;
+  font-size: 18px;
+  text-align: center;
 }
